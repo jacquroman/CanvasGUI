@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>GUI Tree: Jacqueline Roman</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="treeHW.css">
+    <script type="text/javascript" src="HWtree.js"></script>
+</head>
+<body id="background" style="background-color: WHITE;" >
+  <div>
+     <p id= "message" onclick='clicked();'></p>
+  </div>
+  <script>
+    tree("tree_prototype");
+    create_root("tree_prototype", document.body);
+    add_node();
+    node_to_delete = search_node("window one", tree);
+    remove_node(node_to_delete.id);
+  </script>
+</body>
+</html>
